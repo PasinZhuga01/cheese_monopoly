@@ -5,8 +5,7 @@
 	</a>
 	<nav class="section">
 		<ul>
-			<li class="default_link">Поиск игр</li>
-			<li class="default_link">Настройки</li>
+			<li class="default_link" *ngFor="let object of this.navItems"><a [href]="object.href">{{object.text}}</a></li>
 		</ul>
 	</nav>
 	<a href="/" class="profile_box section default_link">
