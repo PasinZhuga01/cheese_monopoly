@@ -1,0 +1,9 @@
+<footer>
+	<div class="section logo_box">
+		<img src="logo_1.png" class="logo" />
+		<span><ng-content></ng-content></span>
+	</div>
+	<div class="contacts section">
+		<p *ngFor="let object of this.contacts">{{object.name}}: <a [href]="object.href">{{object.value}}</a></p>
+	</div>
+</footer>
