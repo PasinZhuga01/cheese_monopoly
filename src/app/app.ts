@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { Header } from './common/components/header/header';
-import { ContentBox } from './common/components/content-box/content-box';
-import { Footer } from './common/components/footer/footer';
+
+import { CommonModule } from './common/common-module';
 
 @Component({
 	selector: 'app-root',
-	imports: [Header, ContentBox, Footer],
+	imports: [CommonModule],
 	templateUrl: './app.html',
 	styleUrl: './app.css'
 })
