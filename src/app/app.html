@@ -1,5 +1,5 @@
 <app-header [navItems]="[{text: 'Поиск игр', href: '/lobby'}, {text: 'Настройки', href: '/settings'}]"></app-header>
-<app-content-box></app-content-box>
+<app-content-box><router-outlet></router-outlet></app-content-box>
 <app-footer
 	[contacts]="[
     {name: 'Email', value: 'sergijumanskij@gmail.com', href: 'mailto:sergijumanskij@gmail.com'},
