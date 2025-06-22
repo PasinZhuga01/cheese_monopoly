@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
 	selector: 'app-header',
-	imports: [CommonModule],
+	standalone: false,
 	templateUrl: './header.html',
 	styleUrl: './header.css'
 })

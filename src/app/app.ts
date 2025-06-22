@@ -8,6 +8,4 @@ import { CommonModule } from './common/common-module';
 	templateUrl: './app.html',
 	styleUrl: './app.css'
 })
-export class App {
-	protected title = 'project';
-}
+export class App {}

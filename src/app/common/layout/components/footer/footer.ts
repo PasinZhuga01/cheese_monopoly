@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
 	selector: 'app-footer',
-	imports: [CommonModule],
+	standalone: false,
 	templateUrl: './footer.html',
 	styleUrl: './footer.css'
 })

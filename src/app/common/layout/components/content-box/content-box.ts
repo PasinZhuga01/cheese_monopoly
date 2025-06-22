@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
 	selector: 'app-content-box',
-	imports: [CommonModule],
+	standalone: false,
 	templateUrl: './content-box.html',
 	styleUrl: './content-box.css'
 })
