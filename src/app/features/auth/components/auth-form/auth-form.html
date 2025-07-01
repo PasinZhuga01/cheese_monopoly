@@ -3,8 +3,7 @@
 
 <form>
 	<p *ngFor="let control of controls">
-		<span>{{control.title}}</span>
-		<app-text-control [type]="control.type"></app-text-control>
+		<label>{{control.title}} <app-text-control [type]="control.type"></app-text-control></label>
 	</p>
 
 	<div class="gap"></div>
