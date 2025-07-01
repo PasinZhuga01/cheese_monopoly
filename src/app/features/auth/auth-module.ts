@@ -6,9 +6,10 @@ import { AuthPage } from './components/auth-page/auth-page';
 
 import { CommonModule } from '../../common/common-module';
 import { AuthContent } from './components/auth-content/auth-content';
+import { AuthForm } from './components/auth-form/auth-form';
 
 @NgModule({
-	declarations: [AuthPage, AuthContent],
+	declarations: [AuthPage, AuthContent, AuthForm],
 	imports: [AngularCommonModule, AuthRoutingModule, CommonModule]
 })
 export class AuthModule {}

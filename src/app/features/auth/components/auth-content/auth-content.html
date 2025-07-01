@@ -1,1 +1,23 @@
-Auth content
+<app-auth-form
+	header="Авторизация"
+	description="Авторизуйтесь при помощи логина и пароля."
+	submitText="Войти"
+	[controls]="[
+        {name: 'login', title: 'Логин', type: 'text'},
+        {name: 'password', title: 'Пароль', type: 'password'}
+    ]"
+></app-auth-form>
+
+<div class="border"></div>
+
+<app-auth-form
+	header="Регистрация"
+	description="Ещё нет аккаунта? Зарегистрируйтесь. Для регистрации придумайте отображаемое имя, уникальный логин и сложный пароль."
+	submitText="Зарегистрироваться"
+	[controls]="[
+        {name: 'login', title: 'Логин', type: 'text'},
+        {name: 'password', title: 'Пароль', type: 'password'},
+        {name: 'repeat-password', title: 'Повтор пароля', type: 'password'},
+        {name: 'name', title: 'Имя', type: 'text'},
+    ]"
+></app-auth-form>

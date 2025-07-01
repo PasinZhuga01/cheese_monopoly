@@ -1,0 +1,11 @@
+<h1>{{header}}</h1>
+<p class="description">{{description}}</p>
+
+<form>
+	<p *ngFor="let control of controls">
+		<span>{{control.title}}</span>
+		<app-text-control [type]="control.type"></app-text-control>
+	</p>
+
+	<p><input type="submit" [value]="submitText" /></p>
+</form>
