@@ -3,9 +3,10 @@ input {
 	height: var(--font-size);
 	border: none;
 	background: none;
-	padding: 1.5vh 0.75vw;
-	box-sizing: border-box;
+	padding: 2vh 0.75vw;
 	padding-left: 0.5vw;
+	margin-top: 0.75vh;
+	box-sizing: border-box;
 	border-bottom: 1px solid black;
 }
 
