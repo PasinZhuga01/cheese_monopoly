@@ -1,6 +1,9 @@
 input {
+	width: 100%;
+	height: var(--font-size);
 	border: none;
-	padding: 0.75vh 0.75vw;
+	background: none;
+	padding: 1.5vh 0.75vw;
 	box-sizing: border-box;
 	padding-left: 0.5vw;
 	border-bottom: 1px solid black;
