@@ -7,6 +7,14 @@ h1 {
 	margin: 0;
 }
 
+form {
+	margin-top: 4vh;
+}
+
 .description {
 	font-size: 1.8vh;
+}
+
+.gap {
+	height: 0.4vh;
 }
