@@ -11,4 +11,6 @@ export class TextControl {
 
 	@Input() public placeholder: string = '';
 	@Input() public maxLength: number = 1000;
+
+	@Input() public color: string = 'var(--input-color)';
 }

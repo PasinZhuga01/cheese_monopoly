@@ -10,7 +10,7 @@ export class ButtonControl {
 	@Input({ required: true }) public type: 'button' | 'submit' = 'button';
 	@Input({ required: true }) public text: string = '';
 
-	@Input() public color: string = '#3bafda';
+	@Input() public color: string = 'var(--input-color)';
 
 	@Output() public clicked: EventEmitter<'click'> = new EventEmitter();
 

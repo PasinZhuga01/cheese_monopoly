@@ -11,3 +11,7 @@ input:hover {
 	cursor: pointer;
 	filter: brightness(110%);
 }
+
+input:focus {
+	outline: none;
+}

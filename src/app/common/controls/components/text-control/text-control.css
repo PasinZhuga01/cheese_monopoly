@@ -1,4 +1,6 @@
 input {
+	--color: var(--input-color);
+
 	width: 100%;
 	height: var(--font-size);
 	border: none;
@@ -8,8 +10,10 @@ input {
 	margin-top: 0.75vh;
 	box-sizing: border-box;
 	border-bottom: 1px solid black;
+	transition: ease 0.1s;
 }
 
 input:focus {
 	outline: none;
+	border-color: var(--color);
 }
