@@ -5,7 +5,11 @@
 	"scripts": {
 		"start": "node dist/index.js",
 		"build": "tsc",
-		"dev": "nodemon dist/index.js"
+		"dev": "nodemon dist/index.js",
+		"db:init": "node scripts/db_exec.js init",
+		"db:seed": "node scripts/db_exec.js seed",
+		"db:backup": "node scripts/db_exec.js backup",
+		"db:restore": "node scripts/db_exec.js restore"
 	},
 	"author": "",
 	"license": "ISC",
@@ -19,6 +23,7 @@
 		"@types/cors": "^2.8.19",
 		"@types/express": "^5.0.3",
 		"@types/node": "^24.0.10",
+		"cross-env": "^7.0.3",
 		"nodemon": "^3.1.10",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.8.3"
