@@ -1,5 +1,21 @@
 {
 	"prettier.configPath": ".prettierrc",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"sqltools.connections": [
+		{
+			"mysqlOptions": {
+				"authProtocol": "default",
+				"enableSsl": "Disabled"
+			},
+			"previewLimit": 50,
+			"server": "localhost",
+			"port": 3306,
+			"driver": "MySQL",
+			"name": "default",
+			"database": "cheese_monopoly",
+			"username": "cheese_monopoly.editor",
+			"askForPassword": true
+		}
+	]
 }
