@@ -1,0 +1,23 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Npm: Link",
+			"runtimeExecutable": "npm",
+			"runtimeArgs": ["link"],
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "TypeScript: Watch",
+			"program": "${workspaceFolder}/node_modules/typescript/bin/tsc",
+			"args": ["--project", "${workspaceFolder}/tsconfig.json", "--watch"],
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen"
+		}
+	]
+}
