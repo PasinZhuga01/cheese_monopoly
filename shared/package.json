@@ -1,0 +1,13 @@
+{
+	"name": "@cheese_monopoly/shared",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	}
+}
