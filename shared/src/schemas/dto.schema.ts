@@ -14,7 +14,7 @@ export const user = z
 	})
 	.transform(({ current_player_id, ...object }) => ({ ...object, currentPlayerId: current_player_id }));
 
-export const games = z
+export const game = z
 	.object({
 		id,
 		current_player_id: nullableId,
@@ -30,7 +30,7 @@ export const games = z
 		winnerId: winner_id
 	}));
 
-export const contracts = z
+export const contract = z
 	.object({
 		id,
 		is_active: z.union([z.literal(0), z.literal(1)]),
@@ -44,7 +44,7 @@ export const contracts = z
 		signatoryId: object.signatory_id
 	}));
 
-export const players = z
+export const player = z
 	.object({
 		id,
 		next_player_id: id,
@@ -58,7 +58,7 @@ export const players = z
 		gameId: object.game_id
 	}));
 
-export const fields = z
+export const field = z
 	.object({
 		id,
 		asset_id: nullableId,
@@ -66,7 +66,7 @@ export const fields = z
 	})
 	.transform(({ asset_id, ...object }) => ({ ...object, assetId: asset_id }));
 
-export const assets = z
+export const asset = z
 	.object({
 		id,
 		owner_id: nullableId,
