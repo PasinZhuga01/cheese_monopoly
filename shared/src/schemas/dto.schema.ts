@@ -9,7 +9,7 @@ import {
 	contract as contractValidators,
 	field as fieldValidators,
 	asset as assetValidators
-} from './validators';
+} from './dto.validator';
 
 export const user = z
 	.object({ id, current_player_id: nullableId, name, ...userValidators })
