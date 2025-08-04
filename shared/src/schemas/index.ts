@@ -1,2 +1,2 @@
 export * as DTO from './dto.schema';
-export * as Validators from './validators';
+export * as DTOValidators from './dto.validator';
